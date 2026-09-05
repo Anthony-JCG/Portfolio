@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function () {
+            const stored = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = stored || (prefersDark ? "dark" : "light");
+            document.documentElement.setAttribute("data-bs-theme", theme);
+        })();
+    </script>
+    <title>Conectafam Plus — Anthony Chancay</title>
+    <meta name="description" content="Conectafam Plus es una plataforma web en producción para una red multinivel en España. Se entra por invitación y se trabaja dentro de esa jerarquía: contenido de formación para los equipos, tableros de archivos y páginas, landing pages, contactos y …">
+    <link rel="canonical" href="https://anthony-jcg.github.io/Portfolio/es/portfolio-details/21/">
+    <link rel="alternate" hreflang="en" href="https://anthony-jcg.github.io/Portfolio/es/portfolio-details/21/">
+    <link rel="alternate" hreflang="es" href="https://anthony-jcg.github.io/Portfolio/es/portfolio-details/21/">
+    <link rel="alternate" hreflang="x-default" href="https://anthony-jcg.github.io/Portfolio/es/portfolio-details/21/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Anthony Chancay — Ingeniero de software">
+    <meta property="og:description" content="Ingeniero de software especializado en Python y Django. Sistemas en producción e infraestructura.">
+    <meta property="og:url" content="https://anthony-jcg.github.io/Portfolio/es/portfolio-details/21/">
+    <meta property="og:image" content="https://anthony-jcg.github.io/Portfolio/static/img/perf.jpg">
+    <meta name="twitter:card" content="summary">
+
+    <link href="/Portfolio/Portfolio/static/img/logo.webp" rel="icon">
+    <link href="/Portfolio/Portfolio/static/img/logo.webp" rel="apple-touch-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="/Portfolio/Portfolio/static/vendor/glightbox/css/glightbox.css" rel="stylesheet">
+    <link href="/Portfolio/Portfolio/static/css/main.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Anthony Chancay",
+      "jobTitle": "Software Engineer",
+      "url": "https://anthony-jcg.github.io/Portfolio/es/",
+      "email": "mailto:anthonyjcg.dev@gmail.com",
+      "image": "https://anthony-jcg.github.io/Portfolio/static/img/perf.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/anthony-jcg/",
+        "https://github.com/Anthony-JCG"
+      ]
+    }
+    </script>
+    
+</head>
+<body class="portfolio_details-page" data-bs-spy="scroll" data-bs-target="#site-nav" data-bs-offset="88">
+
+<header>
+    <nav id="site-nav" class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="/Portfolio/es/">Anthony Chancay</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-nav-collapse"
+                    aria-controls="site-nav-collapse" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="site-nav-collapse">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="/Portfolio/es/#about">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Portfolio/es/#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Portfolio/es/#work">Trabajo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Portfolio/es/#cases">Casos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Portfolio/es/#contact">Contacto</a></li>
+                    <li class="nav-item d-flex align-items-center gap-2 ps-lg-3">
+                        <a href="https://www.linkedin.com/in/anthony-jcg/" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Anthony-JCG" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="mailto:anthonyjcg.dev@gmail.com" class="nav-icon" aria-label="Correo">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item lang-switch ps-lg-2">
+                        <a href="/Portfolio/Portfolio/es/portfolio-details/21/" class="">EN</a>
+                        <span aria-hidden="true">/</span>
+                        <a href="/Portfolio/Portfolio/es/portfolio-details/21/" class="is-active">ES</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                            <i class="bi bi-moon" data-theme-icon="dark" aria-hidden="true"></i>
+                            <i class="bi bi-sun" data-theme-icon="light" aria-hidden="true"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    
+    
+<div class="page-title">
+    <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="h3 mb-2 mb-lg-0">Conectafam Plus</h1>
+        <nav class="breadcrumbs" aria-label="Ruta de navegación">
+            <ol>
+                <li><a href="/Portfolio/es/">Inicio</a></li>
+                <li class="current">Conectafam Plus</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+    <section id="portfolio-details" class="section">
+        <div class="container">
+            <div class="details-layout">
+                <div class="details-copy">
+                    <div class="content-card mb-4">
+                        <h2 class="h5 mb-3">Proyecto</h2>
+                        <dl class="info-list row mb-0">
+                            
+                                <dt class="col-sm-4">Categoría</dt>
+                                <dd class="col-sm-8">
+                                    
+                                        Aplicación web
+                                    
+                                </dd>
+                            
+                            <dt class="col-sm-4">Fecha</dt>
+                            <dd class="col-sm-8">
+                                1 de mayo de 2025
+                                –
+                                
+                                    Actualidad
+                                
+                            </dd>
+                            
+                                <dt class="col-sm-4">URL</dt>
+                                <dd class="col-sm-8">
+                                    <a class="text-link" href="https://conectafam-plus.com/" target="_blank" rel="noopener noreferrer">Ver sitio</a>
+                                </dd>
+                            
+                            
+                                <dt class="col-sm-4">Documentación</dt>
+                                <dd class="col-sm-8">
+                                    <a class="text-link" href="https://anthony-jcg.github.io/Portfolio/conectafam-plus-docs/" target="_blank" rel="noopener noreferrer">Notas técnicas</a>
+                                </dd>
+                            
+                        </dl>
+                    </div>
+                    <div>
+                        <h2 class="h4">Conectafam Plus</h2>
+                        <p>Conectafam Plus es una plataforma web en producción para una red multinivel en España. Se entra por invitación y se trabaja dentro de esa jerarquía: contenido de formación para los equipos, tableros de archivos y páginas, landing pages, contactos y plantillas de WhatsApp.<br><br>Construí y opero la aplicación Django, con permisos distintos según el tipo de usuario y pipelines de imagen y vídeo (WebP y HLS). Está en producción con más de 1.700 usuarios registrados.</p>
+                        
+                    </div>
+                </div>
+                
+                    <div class="details-gallery">
+                        <div class="details-gallery-scroll">    
+                            
+                                <div class="details-thumbs">
+                                    
+                                        <a href="/Portfolio/Portfolio/media/portfolio/Captura_de_pantalla_2026-08-13_004212.webp"
+                                           class="glightbox"
+                                           data-gallery="details-21">
+                                            <div class="image-container">
+                                                <img src="/Portfolio/Portfolio/media/portfolio/Captura_de_pantalla_2026-08-13_004212.webp" alt="Conectafam Plus">
+                                            </div>
+                                        </a>
+                                    
+                                        <a href="/Portfolio/Portfolio/media/portfolio/Captura_de_pantalla_2026-08-13_004356.webp"
+                                           class="glightbox"
+                                           data-gallery="details-21">
+                                            <div class="image-container">
+                                                <img src="/Portfolio/Portfolio/media/portfolio/Captura_de_pantalla_2026-08-13_004356.webp" alt="Conectafam Plus">
+                                            </div>
+                                        </a>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="/Portfolio/Portfolio/static/vendor/glightbox/js/glightbox.js"></script>
+<script src="/Portfolio/Portfolio/static/js/main.js"></script>
+</body>
+</html>
